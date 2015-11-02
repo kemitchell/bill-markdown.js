@@ -24,6 +24,9 @@ January 1:
 Filing Fee
 ---\ $50.00
 
+---
+
+# Total
 $100.00 for services;  
 $50.00 expenses;  
 $0.00 prior due.  
