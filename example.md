@@ -20,6 +20,7 @@ January 1:
 
 \newpage
 
+# Expenses
 
 Filing Fee
 ---\ $50.00
