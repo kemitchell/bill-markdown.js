@@ -5,7 +5,7 @@
     "dollars": 0,
     "cents": 0 },
   "to": {
-    "name": "Some Client",
+    "name": "Some *Client",
     "address": [ "123 4th Street", "San Francisco, CA 94105" ] },
   "from": {
     "name": "Kyle Mitchell",

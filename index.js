@@ -5,6 +5,7 @@ var mustache = require('mustache')
 var fs = require('fs')
 var path = require('path')
 var months = require('english-months')
+var escape = require('markdown-escape')
 
 var templateFile = path.join(__dirname, 'template.mustache')
 var template = fs.readFileSync(templateFile).toString()
@@ -31,6 +32,7 @@ function markdown(bill) {
     expenses: format(expenses),
     prior: format(prior),
     due: format(due) }
+  bill = escapeStringValues(bill)
   return mustache.render(template, bill) }
 
 function chargeToAmount(charge) {
@@ -67,3 +69,17 @@ function parse8601(dateString) {
       day: parseInt(match[3]) } }
   else {
     throw new Error('invalid date: ' + dateString) } }
+
+function escapeStringValues(argument) {
+  if (Array.isArray(argument)) {
+    return argument.map(escapeStringValues) }
+  else if (typeof argument === 'object') {
+    return Object.keys(argument).reduce(
+      function(newObject, key) {
+        newObject[key] = escapeStringValues(argument[key])
+        return newObject },
+      { }) }
+  else if (typeof argument === 'string') {
+    return escape(argument) }
+  else {
+    return argument } }

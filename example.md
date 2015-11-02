@@ -5,7 +5,7 @@ return:
   - "456 7th Street"
   - "Oakland, CA 94609"
 client:
-  - Some Client
+  - "Some \*Client"
   - "123 4th Street"
   - "San Francisco, CA 94105"
 through: "January 30, 2015"
