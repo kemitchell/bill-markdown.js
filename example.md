@@ -18,21 +18,18 @@ January 1:
   Documented super compliance.
 ---\ $100.00, flat fee
 
-\newpage
 
 # Expenses
 
 Filing Fee
 ---\ $50.00
 
-\newpage
-
 $100.00 for services;  
 $50.00 expenses;  
 $0.00 prior due.  
 ---\ **$150.00 now due**
 
----
+\newpage
 
 My goal is to provide valuable service and to earn the trust of those I serve. If the total for this
 bill above does not reflect the value of services received, please adjust the amount of my fees by
