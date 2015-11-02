@@ -1,16 +1,18 @@
 {
   "name": "bill-markdown",
-  "version": "0.0.0",
   "description": "render bills in Markdown",
+  "version": "0.0.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
-  "repository": "kemitchell/bill-markdown.js",
-  "license": "MIT",
+  "bin": "bill-markdown",
   "dependencies": {
     "accounting": "^0.4.1",
     "english-months": "^1.0.0",
     "markdown-escape": "^1.0.1",
-    "mustache": "^2.2.0"
+    "mustache": "^2.2.0",
+    "stdin-transform-cli": "^1.0.4"
   },
+  "license": "MIT",
+  "repository": "kemitchell/bill-markdown.js",
   "scripts": {
     "test": "node test.js"
   }
