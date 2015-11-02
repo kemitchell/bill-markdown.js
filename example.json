@@ -1,0 +1,28 @@
+{ "number": "xx-2015-01",
+  "through": "2015-01-30",
+  "date": "2015-02-01",
+  "prior": {
+    "dollars": 0,
+    "cents": 0 },
+  "to": {
+    "name": "Some Client",
+    "address": [ "123 4th Street", "San Francisco, CA 94105" ] },
+  "from": {
+    "name": "Kyle Mitchell",
+    "address": [ "456 7th Street", "Oakland, CA 94609" ] },
+  "services": [
+    { "charge": {
+        "dollars": 100,
+        "cents": 0 },
+      "note": "flat fee",
+      "name": "Super Compliance",
+      "entries": [
+        { "date": "2015-01-01",
+          "narrative": [
+            "Super complied with super regulations for great good.",
+            "Documented super compliance." ] } ] } ],
+  "expenses": [
+    { "charge": {
+        "dollars": 50,
+        "cents": 0 },
+      "for": "Filing Fee" } ] }

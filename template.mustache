@@ -1,0 +1,72 @@
+---
+number: "{{{number}}}"
+{{#from}}
+return:
+  - "{{{name}}}"
+  {{#address}}
+  - "{{{.}}}"
+  {{/address}}
+{{/from}}
+{{#to}}
+client:
+  - {{{name}}}
+  {{#address}}
+  - "{{{.}}}"
+  {{/address}}
+{{/to}}
+through: "{{{through}}}"
+date: "{{{date}}}"
+---
+{{#note}}
+
+{{{.}}}
+
+---
+
+{{/note}}
+{{#services}}
+# {{{name}}}
+
+{{#entries}}
+{{{date}}}:
+{{#narrative}}
+  {{{.}}}
+{{/narrative}}
+{{/entries}}
+---\ {{{charge}}}{{#note}}, {{{.}}}{{/note}}
+{{/services}}
+
+\newpage
+
+{{^expenses}}No expenses.{{/expenses}}
+{{#expenses}}
+{{{for}}}
+---\ {{{charge}}}
+
+{{/expenses}}
+\newpage
+
+---
+
+{{#totals}}
+**{{{services}}} for services; {{{expenses}}} expenses; {{{prior}}} prior due.
+---\ {{{due}}} now due**
+{{/totals}}
+
+---
+
+My goal is to provide valuable service and to earn the trust of those I serve. If the total for this
+bill above does not reflect the value of services received, please adjust the amount of my fees by
+completing and returning the following worksheet, together with payment for the adjusted amount due,
+within fourteen calendar days:
+
+| Fees Adjustment    | Bill {{{number}}} | |
+|:-------------------|:------------------|:-|
+{{#totals}}
+| 1. Computed fees   | {{{services}}} | |
+| 2. Fees adjustment | $\_\_\_\_\_\_\_\_ | |
+| 3. Adjusted fees   | $\_\_\_\_\_\_\_\_ | = 1 + 2 |
+| 4. Expenses due    | {{{expenses}}} | |
+| 5. Prior balance   | {{{prior}}} | |
+| 6. Amount enclosed | $\_\_\_\_\_\_\_\_ | = 4 + 5 + 6 |
+{{/totals}}
