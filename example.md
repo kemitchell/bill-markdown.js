@@ -29,7 +29,7 @@ Filing Fee
 
 ---
 
-**$100.00 for services; $50.00 expenses; $0.00 prior due.
+**$100.00 for services; $50.00 expenses; $0.00 prior due.  
 ---\ $150.00 now due**
 
 ---
