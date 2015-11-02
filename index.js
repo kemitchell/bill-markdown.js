@@ -3,9 +3,12 @@ module.exports = markdown
 var accounting = require('accounting')
 var mustache = require('mustache')
 var fs = require('fs')
+var path = require('path')
 var months = require('english-months')
 
-var template = fs.readFileSync('./template.mustache').toString()
+var templateFile = path.join(__dirname, 'template.mustache')
+var template = fs.readFileSync(templateFile).toString()
+
 mustache.parse(template)
 
 function markdown(bill) {
