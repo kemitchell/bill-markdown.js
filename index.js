@@ -28,18 +28,21 @@ function markdown(bill) {
     bill.expenses.forEach(function(expense) {
       expense.charge = format(chargeToAmount(expense.charge)) }) }
   bill.totals = {
-    services: format(services),
-    expenses: format(expenses),
-    prior: format(prior),
-    due: format(due) }
+    services: format(services, true),
+    expenses: format(expenses, true),
+    prior: format(prior, true),
+    due: format(due, true) }
   bill = escapeStringValues(bill)
   return mustache.render(template, bill) }
 
 function chargeToAmount(charge) {
   return ( charge.dollars + ( charge.cents / 100 ) ) }
 
-function format(amount) {
-  return accounting.formatMoney(amount) }
+function format(amount, always) {
+  if (!always && amount == 0) {
+    return 'no charge' }
+  else {
+    return accounting.formatMoney(amount) } }
 
 function total(entries) {
   return entries.reduce(
