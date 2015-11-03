@@ -31,10 +31,7 @@ $100.00 service; $50.00 expenses; $0.00 prior. ---\ $150.00 now due
 
 \newpage
 
-My goal is to provide valuable service and to earn the trust of those I serve. If the total for this
-bill above does not reflect the value of services received, please adjust the amount of my fees by
-completing and returning the following worksheet, together with payment for the adjusted amount due,
-within fourteen calendar days:
+My goal is to provide valuable service and to earn the trust of those I serve. If the total for this bill above does not reflect the value of services received, please adjust the amount of my fees for services by completing and returning the following worksheet, together with payment for the adjusted amount due, within fourteen calendar days:
 
 | Fees Adjustment    | Bill xx-2015-01 | |
 |:-------------------|:------------------|:-|
