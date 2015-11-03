@@ -29,8 +29,6 @@ Filing Fee
 
 $100.00 service; $50.00 expenses; $0.00 prior. ---\ $150.00 now due
 
----
-
 \newpage
 
 My goal is to provide valuable service and to earn the trust of those I serve. If the total for this
