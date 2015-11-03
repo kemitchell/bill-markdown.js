@@ -3,7 +3,9 @@
   "description": "render bills in Markdown",
   "version": "0.0.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
-  "bin": "bill-markdown",
+  "bin": {
+    "bill-markdown": "bill-markdown"
+  },
   "dependencies": {
     "accounting": "^0.4.1",
     "english-months": "^1.0.0",
