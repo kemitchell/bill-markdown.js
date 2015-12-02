@@ -30,6 +30,7 @@ function markdown(bill) {
   bill.totals = {
     services: format(services, true),
     expenses: format(expenses, true),
+    expensesShort: ( expenses === 0 ? 'no' : format(expenses, true) ),
     prior: format(prior, true),
     due: format(due, true) }
   bill = escapeStringValues(bill)
