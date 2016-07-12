@@ -40,4 +40,4 @@ My goal is to provide valuable service and to earn the trust of those I serve. I
 | 3. Adjusted        | $\_\_\_\_\_\_\_\_ | = 1 + 2 |
 | 4. Expenses due    | $50.00 | |
 | 5. Prior balance   | $0.00 | |
-| 6. Amount enclosed | $\_\_\_\_\_\_\_\_ | = 4 + 5 + 6 |
+| 6. Amount enclosed | $\_\_\_\_\_\_\_\_ | = 3 + 4 + 5 |
