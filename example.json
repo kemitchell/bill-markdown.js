@@ -4,6 +4,7 @@
   "prior": {
     "dollars": 0,
     "cents": 0 },
+  "adjustable": true,
   "to": {
     "name": "Some *Client",
     "address": [ "123 4th Street", "San Francisco, CA 94105" ] },

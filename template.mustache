@@ -49,6 +49,7 @@ date: "{{{date}}}"
 
 {{#totals}}{{{services}}} service; {{{expensesShort}}} expenses; {{{prior}}} prior. ---\ {{{due}}} due{{/totals}}
 
+{{#notAdjustable}}
 \newpage
 
 My goal is to provide valuable service and to earn the trust of those I serve. If the total for this bill above does not reflect the value of services received, please adjust the amount of my fees for services by completing and returning the following worksheet, together with payment for the adjusted amount due, within fourteen calendar days:
@@ -63,3 +64,4 @@ My goal is to provide valuable service and to earn the trust of those I serve. I
 | 5. Prior balance   | {{{prior}}} | |
 | 6. Amount enclosed | $\_\_\_\_\_\_\_\_ | = 3 + 4 + 5 |
 {{/totals}}
+{{/notAdjustable}}
