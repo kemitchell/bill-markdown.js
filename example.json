@@ -1,9 +1,6 @@
 { "number": "xx-2015-01",
   "through": "2015-01-30",
   "date": "2015-02-01",
-  "prior": {
-    "dollars": 0,
-    "cents": 0 },
   "adjustable": true,
   "to": {
     "name": "Some *Client",

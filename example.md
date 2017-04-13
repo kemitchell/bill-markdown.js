@@ -27,7 +27,7 @@ Filing Fee
 
 ---
 
-$100.00 service; $50.00 expenses; $0.00 prior. ---\ $150.00 due
+$100.00 service & $50.00 expenses ---\ $150.00 due
 
 \newpage
 
@@ -39,5 +39,4 @@ My goal is to provide valuable service and to earn the trust of those I serve. I
 | 2. Adjustment      | $\_\_\_\_\_\_\_\_ | |
 | 3. Adjusted        | $\_\_\_\_\_\_\_\_ | = 1 + 2 |
 | 4. Expenses due    | $50.00 | |
-| 5. Prior balance   | $0.00 | |
-| 6. Amount enclosed | $\_\_\_\_\_\_\_\_ | = 3 + 4 + 5 |
+| 5. Amount enclosed | $\_\_\_\_\_\_\_\_ | = 3 + 4 |

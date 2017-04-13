@@ -47,7 +47,7 @@ date: "{{{date}}}"
 
 ---
 
-{{#totals}}{{{services}}} service; {{{expensesShort}}} expenses; {{{prior}}} prior. ---\ {{{due}}} due{{/totals}}
+{{#totals}}{{{services}}} service & {{{expensesShort}}} expenses ---\ {{{due}}} due{{/totals}}
 
 {{^notAdjustable}}
 \newpage
@@ -61,7 +61,6 @@ My goal is to provide valuable service and to earn the trust of those I serve. I
 | 2. Adjustment      | $\_\_\_\_\_\_\_\_ | |
 | 3. Adjusted        | $\_\_\_\_\_\_\_\_ | = 1 + 2 |
 | 4. Expenses due    | {{{expenses}}} | |
-| 5. Prior balance   | {{{prior}}} | |
-| 6. Amount enclosed | $\_\_\_\_\_\_\_\_ | = 3 + 4 + 5 |
+| 5. Amount enclosed | $\_\_\_\_\_\_\_\_ | = 3 + 4 |
 {{/totals}}
 {{/notAdjustable}}

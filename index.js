@@ -15,8 +15,7 @@ mustache.parse(template)
 function markdown(bill) {
   var services = ( 'services' in bill ? total(bill.services) : 0 )
   var expenses = ( 'expenses' in bill ? total(bill.expenses) : 0 )
-  var prior = ( 'prior' in bill ? chargeToAmount(bill.prior) : 0 )
-  var due = ( services + expenses + prior )
+  var due = ( services + expenses )
   bill.date = fullDate(bill.date)
   bill.through = fullDate(bill.through)
   if ('services' in bill) {
@@ -31,7 +30,6 @@ function markdown(bill) {
     services: format(services, true),
     expenses: format(expenses, true),
     expensesShort: ( expenses === 0 ? 'no' : format(expenses, true) ),
-    prior: format(prior, true),
     due: format(due, true) }
   bill = escapeStringValues(bill)
   return mustache.render(template, bill) }
