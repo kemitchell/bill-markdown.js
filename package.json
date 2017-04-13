@@ -16,6 +16,11 @@
   "license": "MIT",
   "repository": "kemitchell/bill-markdown.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "lint": "standard && standard-markdown"
+  },
+  "devDependencies": {
+    "standard": "^10.0.1",
+    "standard-markdown": "^2.3.0"
   }
 }

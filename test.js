@@ -6,7 +6,8 @@ var bill = require('./example.json')
 var expected = fs.readFileSync('./example.md').toString()
 
 try {
-  assert.equal(markdown(bill), expected) }
-catch (e) {
+  assert.equal(markdown(bill), expected)
+} catch (e) {
   fs.writeFileSync('./actual', e.actual)
-  throw e }
+  throw e
+}

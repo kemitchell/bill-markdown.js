@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 require('stdin-transform-cli')(
   require('./package.json'),
-  function(input, callback) {
-    callback(null, require('./')(JSON.parse(input))) })()
+  function (input, callback) {
+    callback(null, require('./')(JSON.parse(input)))
+  }
+)()
