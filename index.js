@@ -28,6 +28,7 @@ function markdown (bill) {
   }
   if ('expenses' in bill) {
     bill.expenses.forEach(function (expense) {
+      bill.hasExpenses = true
       expense.charge = format(chargeToAmount(expense.charge))
     })
   }

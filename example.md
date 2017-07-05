@@ -21,6 +21,7 @@ January 1:
 
 # Expenses
 
+
 Filing Fee
 ---\ $50.00
 
