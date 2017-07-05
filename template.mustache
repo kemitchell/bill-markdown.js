@@ -37,12 +37,15 @@ date: "{{{date}}}"
 
 {{/services}}
 
-{{#expenses}}
 # Expenses
+{{#expenses}}
 
 {{{for}}}
 ---\ {{{charge}}}
 
+{{/expenses}}
+{{^expenses}}
+None.
 {{/expenses}}
 
 ---
