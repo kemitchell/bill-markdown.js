@@ -74,7 +74,7 @@ function fullDate (dateString) {
 
 function partialDate (dateString) {
   var date = parse8601(dateString)
-  return months[date.month - 1] + ' ' + date.day
+  return months[date.month - 1] + '&nbsp;' + date.day
 }
 
 var ISO8601 = /(\d\d\d\d)-(\d\d)-(\d\d)/

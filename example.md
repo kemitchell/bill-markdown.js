@@ -13,7 +13,7 @@ date: "February 1, 2015"
 ---
 # Super Compliance
 
-January 1:
+January&nbsp;1:
   Super complied with super regulations for great good.
   Documented super compliance.
 ---\ $100.00, flat fee
