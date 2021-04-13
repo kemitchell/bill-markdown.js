@@ -1,7 +1,7 @@
 {
   "name": "@kemitchell/bill-markdown",
   "description": "render bills in Markdown",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "bin": {
     "bill-markdown": "bill-markdown"
