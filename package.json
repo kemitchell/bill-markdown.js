@@ -9,6 +9,7 @@
   "dependencies": {
     "accounting": "^0.4.1",
     "english-months": "^1.0.0",
+    "js-yaml": "^4.1.0",
     "markdown-escape": "^1.0.1",
     "mustache": "^2.2.0",
     "stdin-transform-cli": "^1.0.4"

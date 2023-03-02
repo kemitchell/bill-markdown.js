@@ -1,22 +1,5 @@
----
-number: "{{{number}}}"
-{{#from}}
-return:
-  - "{{{name}}}"
-  {{#address}}
-  - "{{{.}}}"
-  {{/address}}
-{{/from}}
-{{#to}}
-client:
-  - "{{{name}}}"
-  {{#address}}
-  - "{{{.}}}"
-  {{/address}}
-{{/to}}
-through: "{{{through}}}"
-date: "{{{date}}}"
----
+{{{frontMatter}}}
+
 {{#note}}
 
 {{{.}}}

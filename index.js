@@ -6,6 +6,7 @@ var fs = require('fs')
 var path = require('path')
 var months = require('english-months')
 var escape = require('markdown-escape')
+var yaml = require('js-yaml')
 
 var templateFile = path.join(__dirname, 'template.mustache')
 var template = fs.readFileSync(templateFile).toString()
@@ -38,7 +39,15 @@ function markdown (bill) {
     expensesShort: (expenses === 0 ? 'no' : format(expenses, true)),
     due: format(due, true)
   }
+  var frontMatter = '---\n' + yaml.dump({
+    number: bill.number,
+    return: [bill.from.name].concat(bill.from.address),
+    client: [bill.to.name].concat(bill.to.address),
+    through: bill.through,
+    date: bill.date
+  }, { quotingType: '"', forceQuotes: true }) + '---'
   bill = escapeStringValues(bill)
+  bill.frontMatter = frontMatter
   return mustache.render(template, bill)
 }
 
